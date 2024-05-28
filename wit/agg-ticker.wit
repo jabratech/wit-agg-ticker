@@ -2,7 +2,7 @@ interface agg-ticker {
 
     record aggregated-tickers {
         // TODO: Add these fields for single aggregation
-        instrument-name: string;
+        instrument-name: string,
     }
 
     aggregate: func(instrument-name: string) -> result<aggregated-tickers, string>;
